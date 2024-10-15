@@ -12,16 +12,17 @@ const NameForm=()=>{
       e.preventDefault();
       
       if (!firstName || !lastName) {
-        setError("Both first name and last name are required.");
-      } else {
+        setError("Both fields are required.");
+        return;
+      }
         setError(""); // Clear error
         setFullName(`${firstName} ${lastName}`); // Set full name
-      }
+    
     };
 
     return (
       <div>
-        <h1 className="heading">Full Display Name</h1>
+        <h1 className="heading">Full Name Display</h1>
 
         <form onSubmit={handleSubmit}>
        

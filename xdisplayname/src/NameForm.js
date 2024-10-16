@@ -47,8 +47,8 @@ const NameForm=()=>{
           <button type="submit" styles="text:center">Submit</button>
         </form>
        
-        {error && <p style={{ color: "red",textAlign:"center"}}>{error}</p>}
-        {fullName && <h2 style={{textAlign:"center"}}>Full Name: {fullName}</h2>}
+        {error && <p style={{ color: "red" }}>{error}</p>}
+      {fullName && <h2 style={{textAlign:"center"}}>Full Name: {fullName}</h2>}
       </div>
     );
     };
